@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Leak Inspector Tests",
   "description": "An add-on to execute tests against the Leak Inspector add-on",
-  "homepage_url": "https://github.com/leaky-forms/leak-inspector",
+  "homepage_url": "https://github.com/grundt/leak-inspector-tests",
   "version": "1.0.0.0",
   "permissions": [
     "webRequest",
