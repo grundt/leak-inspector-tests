@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <base href="./">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <script src="test-result-list-element.js"></script>
+  <script src="other_domain.js"></script>
+  <script src="test.js"></script>
+  <script src="badge_tests.js"></script>
+ </head>
+ <body>
+  <form id="form">
+   <label for="email">email:</label><input id="email" name="email" type="email"></input>
+   <label for="password">password:</label><input id="password" name="password" type="password"></input>
+  </form>
+  <formoverlay></formoverlay>
+  <div id="test-result-prompt" class="hidden"><button class="pass">Pass</button><button class="fail">Fail</button></div>
+  <dl id="test-result-list" is="test-result-list-element"/>
+ </body>
+</html>

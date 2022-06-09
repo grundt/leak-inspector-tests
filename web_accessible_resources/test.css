@@ -1,0 +1,61 @@
+body {
+  background-color:#222222;
+  padding:50px 0 0 50px;
+}
+form {
+  display:inline-block;
+  background-color:indigo;
+  border-radius:20px;
+  margin:0 0 30px 0;
+  padding:20px 20px 0 20px;
+}
+formoverlay {
+  position:absolute;
+  top:70px;
+  left:70px;
+  height:135px;
+  width:225px;
+  opacity:0;
+}
+label {
+  display:block;
+  color:salmon;
+  width:200px;
+  text-alignX:right;
+}
+input {
+  height:24px;
+  width:200px;
+  margin:0 0 20px 0;
+}
+button {
+  cursor:pointer;
+  border:none;
+  width:200px;
+  padding:4px;
+  margin:0 5px 10px 2px;
+  font-size:1.1em;
+}
+dt {
+  color:magenta;
+  margin:18px 0 6px 0;
+}
+dt .pass, dt .fail {
+  border-radius:3px;
+  margin:0 0 0 9px;
+  padding:3px 6px 2px 6px;
+}
+dd {
+  color:cyan;
+}
+.pass {
+  background-color:mediumseagreen;
+  color:darkgreen;
+}
+.fail {
+  background-color:firebrick;
+  color:coral;
+}
+.hidden {
+  visibility:hidden;
+}

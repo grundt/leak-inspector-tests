@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Leak Inspector Tests",
+  "description": "An add-on to execute tests against the Leak Inspector add-on",
+  "homepage_url": "https://github.com/leaky-forms/leak-inspector",
+  "version": "1.0.0.0",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://example.com/*",
+    "*://example.net/*",
+    "*://example.org/*"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{88888888-bbbb-aaaa-dddd-cccccccccccc}"
+    }
+  },
+  "icons": {
+    "19": "icons/logo_min.png",
+    "48": "icons/logo_48.png",
+    "128": "icons/logo_128.png",
+    "332": "icons/logo.png"
+  },
+  "background": {
+    "scripts": [
+      "background/background.js"
+    ],
+    "persistent":false
+  },
+  "page_action": {
+    "default_icon": {
+      "19": "icons/logo_orange.png"
+    },
+    "show_matches": [
+      "*://example.com/"
+    ]
+  },
+  "web_accessible_resources": [
+    "/web_accessible_resources/*"
+  ]
+}
