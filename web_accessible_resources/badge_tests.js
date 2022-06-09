@@ -50,7 +50,7 @@ class Badge {
   static #onMessage(e) {
     this.#trace(`.onMessage()`);
     if ((typeof(e.data.message)==="string") && (e.data.message==="LeakInspectorBadge")) {
-      // message sent from LeakInspector via background_utils.js -> content_script.js
+      // message sent from LeakInspector via background_utils.js -> test_support.js
       this.LeakInspectorBadge = new Badge(this.#getColorForRgba(e.data.value.BackgroundColor), e.data.value.Text);
       this.#trace(`.onMessage("LeakInspectorBadge"=${this.LeakInspectorBadge})`);
     }
